@@ -1,1 +1,2 @@
-# MVVM - An implementation of Model View ViewModel Acrchitecture with Dagger2
+# MVVM
+ - An implementation of Model View ViewModel Acrchitecture with Dagger2
