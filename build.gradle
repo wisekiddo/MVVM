@@ -20,6 +20,8 @@ buildscript {
         rxRelayVersion = '2.0.0'
         conductorVersion = '2.1.4'
         kotlinVersion = '1.2.61'
+        timberversion = '4.5.1'
+
     }
 
     repositories {

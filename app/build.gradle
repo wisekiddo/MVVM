@@ -48,6 +48,7 @@ dependencies {
     annotationProcessor "com.google.auto.value:auto-value:$autoValueVersion"
 
     implementation "com.jakewharton.threetenabp:threetenabp:$threeTenAbpVersion"
+    implementation "com.jakewharton.timber:timber:$timberversion"
 
     implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
@@ -58,7 +59,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 }
