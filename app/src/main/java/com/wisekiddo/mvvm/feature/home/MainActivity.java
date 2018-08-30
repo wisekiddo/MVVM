@@ -1,18 +1,9 @@
 package com.wisekiddo.mvvm.feature.home;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-
 import com.bluelinelabs.conductor.Controller;
 import com.wisekiddo.mvvm.R;
 import com.wisekiddo.mvvm.base.ActivityBase;
-import com.wisekiddo.mvvm.data.TrendingReposController;
+import com.wisekiddo.mvvm.feature.trending.TrendingReposController;
 
 public class MainActivity extends ActivityBase {
 

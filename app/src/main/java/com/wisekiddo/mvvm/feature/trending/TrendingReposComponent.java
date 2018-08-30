@@ -1,6 +1,6 @@
-package com.wisekiddo.mvvm.data;
+package com.wisekiddo.mvvm.feature.trending;
 
-import com.wisekiddo.mvvm.di.ScreenScope;
+import com.wisekiddo.mvvm.base.di.ScreenScope;
 
 import dagger.Subcomponent;
 import dagger.android.AndroidInjector;

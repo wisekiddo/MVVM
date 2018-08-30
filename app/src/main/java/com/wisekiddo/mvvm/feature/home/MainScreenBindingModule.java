@@ -1,9 +1,9 @@
 package com.wisekiddo.mvvm.feature.home;
 
 import com.bluelinelabs.conductor.Controller;
-import com.wisekiddo.mvvm.data.TrendingReposComponent;
-import com.wisekiddo.mvvm.data.TrendingReposController;
-import com.wisekiddo.mvvm.di.ControllerKey;
+import com.wisekiddo.mvvm.feature.trending.TrendingReposComponent;
+import com.wisekiddo.mvvm.feature.trending.TrendingReposController;
+import com.wisekiddo.mvvm.base.di.ControllerKey;
 
 import dagger.Binds;
 import dagger.Module;

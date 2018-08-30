@@ -3,7 +3,7 @@ package com.wisekiddo.mvvm.base;
 import android.content.Context;
 
 import com.bluelinelabs.conductor.Controller;
-import com.wisekiddo.mvvm.di.Injector;
+import com.wisekiddo.mvvm.base.di.Injector;
 
 import javax.annotation.Nonnull;
 

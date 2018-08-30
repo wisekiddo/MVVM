@@ -1,4 +1,4 @@
-package com.wisekiddo.mvvm.data;
+package com.wisekiddo.mvvm.feature.trending;
 
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;

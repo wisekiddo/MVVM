@@ -1,4 +1,4 @@
-package com.wisekiddo.mvvm.di;
+package com.wisekiddo.mvvm.base.di;
 
 import android.app.Activity;
 

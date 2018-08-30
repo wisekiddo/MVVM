@@ -11,9 +11,9 @@ import com.bluelinelabs.conductor.Controller;
 import com.bluelinelabs.conductor.ControllerChangeHandler;
 import com.bluelinelabs.conductor.Router;
 import com.wisekiddo.mvvm.R;
-import com.wisekiddo.mvvm.di.Injector;
-import com.wisekiddo.mvvm.di.ScreenInjector;
-import com.wisekiddo.mvvm.ui.Navigator;
+import com.wisekiddo.mvvm.base.di.Injector;
+import com.wisekiddo.mvvm.base.di.ScreenInjector;
+import com.wisekiddo.mvvm.director.Navigator;
 
 import java.util.UUID;
 

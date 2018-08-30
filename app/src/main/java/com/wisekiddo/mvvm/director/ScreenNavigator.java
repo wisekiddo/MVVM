@@ -1,9 +1,9 @@
-package com.wisekiddo.mvvm.ui;
+package com.wisekiddo.mvvm.director;
 
 import com.bluelinelabs.conductor.Controller;
 import com.bluelinelabs.conductor.Router;
 import com.bluelinelabs.conductor.RouterTransaction;
-import com.wisekiddo.mvvm.di.ActivityScope;
+import com.wisekiddo.mvvm.base.di.ActivityScope;
 
 import javax.inject.Inject;
 

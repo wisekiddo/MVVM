@@ -2,7 +2,7 @@ package com.wisekiddo.mvvm.base;
 
 import android.app.Application;
 
-import com.wisekiddo.mvvm.di.ActivityInjector;
+import com.wisekiddo.mvvm.base.di.ActivityInjector;
 
 import javax.inject.Inject;
 

@@ -1,7 +1,7 @@
 package com.wisekiddo.mvvm.feature.home;
 
-import com.wisekiddo.mvvm.di.ActivityScope;
-import com.wisekiddo.mvvm.ui.NavigatorModule;
+import com.wisekiddo.mvvm.base.di.ActivityScope;
+import com.wisekiddo.mvvm.director.NavigatorModule;
 
 import dagger.Subcomponent;
 import dagger.android.AndroidInjector;
