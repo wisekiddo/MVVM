@@ -15,7 +15,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.moshi.MoshiConverterFactory;
 
 @Module
-public abstract class ServiceModule {
+public abstract class ApiClient {
 
     @Provides
     @Singleton
