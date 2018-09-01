@@ -2,9 +2,11 @@ package com.wisekiddo.mvvm.feature.trending;
 
 import com.wisekiddo.mvvm.base.di.ScreenScope;
 import com.wisekiddo.mvvm.data.model.Repo;
-import com.wisekiddo.mvvm.data.source.RemoteDataSource;
+import com.wisekiddo.mvvm.data.source.remote.RemoteDataSource;
 
 import javax.inject.Inject;
+
+import timber.log.Timber;
 
 @ScreenScope
 class TrendingPresenter implements RepoAdapter.RepoClickedListener {
@@ -28,6 +30,6 @@ class TrendingPresenter implements RepoAdapter.RepoClickedListener {
 
     @Override
     public void onRepoClicked(Repo repo) {
-
+        Timber.i("CLICKED", "Error loading Repos");
     }
 }

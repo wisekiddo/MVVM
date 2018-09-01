@@ -22,6 +22,7 @@ class TrendingViewModel {
 
     @Inject
     TrendingViewModel(){
+
     }
 
     io.reactivex.Observable<Boolean> loading() {

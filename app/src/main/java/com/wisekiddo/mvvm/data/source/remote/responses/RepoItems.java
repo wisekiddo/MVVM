@@ -1,4 +1,4 @@
-package com.wisekiddo.mvvm.data.source.remote.response;
+package com.wisekiddo.mvvm.data.source.remote.responses;
 
 import com.google.auto.value.AutoValue;
 import com.squareup.moshi.Json;

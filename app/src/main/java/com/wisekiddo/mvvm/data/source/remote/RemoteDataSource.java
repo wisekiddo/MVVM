@@ -1,8 +1,8 @@
-package com.wisekiddo.mvvm.data.source;
+package com.wisekiddo.mvvm.data.source.remote;
 
 import com.wisekiddo.mvvm.data.model.Repo;
 import com.wisekiddo.mvvm.data.source.remote.ApiService;
-import com.wisekiddo.mvvm.data.source.remote.response.RepoItems;
+import com.wisekiddo.mvvm.data.source.remote.responses.RepoItems;
 
 import java.util.List;
 
