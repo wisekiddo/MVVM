@@ -3,7 +3,7 @@ package com.wisekiddo.mvvm.feature.home;
 import com.bluelinelabs.conductor.Controller;
 import com.wisekiddo.mvvm.R;
 import com.wisekiddo.mvvm.base.ActivityBase;
-import com.wisekiddo.mvvm.feature.trending.TrendingReposController;
+import com.wisekiddo.mvvm.feature.trending.TrendingController;
 
 public class MainActivity extends ActivityBase {
 
@@ -14,7 +14,7 @@ public class MainActivity extends ActivityBase {
 
     @Override
     protected Controller initialScreen(){
-        return new TrendingReposController();
+        return new TrendingController();
     }
 
     /*

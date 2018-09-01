@@ -7,9 +7,9 @@ import dagger.android.AndroidInjector;
 
 @ScreenScope
 @Subcomponent
-public interface TrendingReposComponent extends AndroidInjector<TrendingReposController>{
+public interface TrendingComponent extends AndroidInjector<TrendingController>{
     @Subcomponent.Builder
-    abstract class Builder extends AndroidInjector.Builder<TrendingReposController>{
+    abstract class Builder extends AndroidInjector.Builder<TrendingController>{
 
     }
 }

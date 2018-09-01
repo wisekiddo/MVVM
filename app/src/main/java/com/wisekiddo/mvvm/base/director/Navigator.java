@@ -1,4 +1,4 @@
-package com.wisekiddo.mvvm.director;
+package com.wisekiddo.mvvm.base.director;
 
 import com.bluelinelabs.conductor.Controller;
 import com.bluelinelabs.conductor.Router;

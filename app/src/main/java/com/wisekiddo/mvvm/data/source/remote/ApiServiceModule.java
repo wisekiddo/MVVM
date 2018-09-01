@@ -10,8 +10,8 @@ import retrofit2.Retrofit;
 public abstract class ApiServiceModule {
     @Provides
     @Singleton
-    static ApiServiceModule provideRepoService(Retrofit retrofit) {
-        return retrofit.create(ApiServiceModule.class);
+    static ApiService provideRepoService(Retrofit retrofit) {
+        return retrofit.create(ApiService.class);
     }
 
 }

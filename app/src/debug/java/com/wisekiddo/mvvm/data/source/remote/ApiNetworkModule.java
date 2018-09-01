@@ -9,7 +9,7 @@ import okhttp3.Call;
 import okhttp3.OkHttpClient;
 
 @Module
-public abstract class NetworkModule {
+public abstract class ApiNetworkModule {
 
     @Provides
     @Singleton

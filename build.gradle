@@ -21,6 +21,7 @@ buildscript {
         conductorVersion = '2.1.4'
         kotlinVersion = '1.2.61'
         timberversion = '4.5.1'
+        butterknifeVersion = '8.8.1'
 
     }
 

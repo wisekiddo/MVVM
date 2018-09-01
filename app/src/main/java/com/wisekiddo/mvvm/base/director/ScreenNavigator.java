@@ -1,4 +1,4 @@
-package com.wisekiddo.mvvm.director;
+package com.wisekiddo.mvvm.base.director;
 
 import com.bluelinelabs.conductor.Controller;
 import com.bluelinelabs.conductor.Router;
@@ -11,6 +11,7 @@ import javax.inject.Inject;
 public class ScreenNavigator implements Navigator {
 
     private Router router;
+
     @Inject
     ScreenNavigator(){
 
