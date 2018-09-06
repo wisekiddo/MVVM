@@ -12,16 +12,16 @@ import io.reactivex.Single;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
-public class RemoteDataSource {
+public class RemoteRepository {
 
     private final ApiService service;
 
     @Inject
-    RemoteDataSource(ApiService service) {
+    RemoteRepository(ApiService service) {
         this.service = service;
     }
 
-    public Single<List<Repo>> getRepositories() {
+    public Single<List<Repo>> getItems() {
         return service.getRepositories()
                 .map(new Function<RepoItems, List<Repo>>() {
                     @Override

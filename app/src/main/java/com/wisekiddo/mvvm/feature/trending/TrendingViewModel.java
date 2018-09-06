@@ -6,11 +6,11 @@ import com.wisekiddo.mvvm.base.di.ScreenScope;
 import com.wisekiddo.mvvm.data.model.Repo;
 
 import java.util.List;
-import java.util.Observable;
 
 import javax.inject.Inject;
 
 import io.reactivex.functions.Consumer;
+import io.reactivex.Observable;
 import timber.log.Timber;
 
 @ScreenScope
@@ -25,15 +25,15 @@ class TrendingViewModel {
 
     }
 
-    io.reactivex.Observable<Boolean> loading() {
+    Observable<Boolean> loading() {
         return loadingRelay;
     }
 
-    io.reactivex.Observable<List<Repo>> repos() {
+    Observable<List<Repo>> repos() {
         return reposRelay;
     }
 
-    io.reactivex.Observable<Integer> error() {
+    Observable<Integer> error() {
         return errorRelay;
     }
 

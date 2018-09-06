@@ -1,7 +1,7 @@
 package com.wisekiddo.mvvm.feature.trending;
 
 import com.wisekiddo.mvvm.data.model.Repo;
-import com.wisekiddo.mvvm.data.source.remote.RemoteDataSource;
+import com.wisekiddo.mvvm.data.source.remote.RemoteRepository;
 import com.wisekiddo.mvvm.data.source.remote.responses.RepoItems;
 import com.wisekiddo.mvvm.testutil.TestUtils;
 
@@ -24,7 +24,8 @@ import static org.mockito.Mockito.when;
 
 public class TrendingPresenterTest {
 
-    @Mock RemoteDataSource remoteDataSource;
+    @Mock
+    RemoteRepository remoteRepository;
     @Mock TrendingViewModel viewModel;
     @Mock Consumer<Throwable> onErrorConsumer;
     @Mock Consumer<List<Repo>> onSuccessConsumer;
@@ -45,7 +46,7 @@ public class TrendingPresenterTest {
         List<Repo> repos = setUpSuccess();
         initializePresenter();
 
-        verify(remoteDataSource).getRepositories();
+        verify(remoteRepository).getItems();
         verify(onSuccessConsumer).accept(repos);
         verifyZeroInteractions(onErrorConsumer);
     }
@@ -89,19 +90,19 @@ public class TrendingPresenterTest {
         RepoItems repoItems = TestUtils.loadJson("mock/get_trending_repos.json", RepoItems.class);
         List<Repo> repos = repoItems.items();
 
-        when(remoteDataSource.getRepositories()).thenReturn(Single.just(repos));
+        when(remoteRepository.getItems()).thenReturn(Single.just(repos));
 
         return repos;
     }
 
     private Throwable setUpError() {
         Throwable error = new IOException();
-        when(remoteDataSource.getRepositories()).thenReturn(Single.error(error));
+        when(remoteRepository.getItems()).thenReturn(Single.error(error));
 
         return error;
     }
 
     private void initializePresenter() {
-        presenter = new TrendingPresenter(viewModel, remoteDataSource);
+        presenter = new TrendingPresenter(viewModel, remoteRepository);
     }
 }
